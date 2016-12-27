@@ -5,7 +5,7 @@ Think of it as a notes repo where there are numerous .MD files in order to expla
 
 # Why this repository? 
 
-1.) Because having working examples is often times the best sort of teaching tool one can provide.
-2.) Making this repo cements the author's own understanding of the ECMAScript standard. 
+##.) Because having working examples is often times the best sort of teaching tool one can provide.
+##.) Making this repo cements the author's own understanding of the ECMAScript standard.
 
  
