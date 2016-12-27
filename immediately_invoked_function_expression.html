@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Immediately Invoked Function Expression</title>
+</head>
+<body>
+<div id="output1"></div>
+
+    <script>
+
+        // example: (function(){ content goes here })();
+
+        // EXPLANATION:
+        // http://javascriptissexy.com/12-simple-yet-powerful-javascript-tips/
+
+        // The pair of parenthesis surrounding the anonymous function turns
+        // the anonymous function into a function expression or variable expression.
+        // So instead of a simple anonymous function in the global scope, or
+        // wherever it was defined, we now have an unnamed function expression.
+
+        (function(){
+            document.getElementById("output1").innerHTML = "Rey Skywalker";
+        })();
+    </script>
+
+
+</body>
+</html>
