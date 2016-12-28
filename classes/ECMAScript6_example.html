@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ECMAScript 6 Example</title>
+</head>
+<body>
+<h1>ECMAScript 6 Example: Introduces the "class" keyword moving JavaScript closer to other C-based languages. </h1>
+<ol>
+    <li>ECMAScript 1 - 5 does not have classes.</li>
+    <li>ECMAScript 6 - Version 6 DOES use classes. We are no longer bound by functions and prototypes.</li>
+    <li>In the case of version 6, we are creating a new class, "ClassName" {} which has methods that do NOT require the function keyword in front of them, and do NOT need to reference an object's prototype.</li>
+    <li>Instead the var MyNewPerson = new MyPerson("NameGoesHere") and MyNewPerson.whatIsMyName() are equivalent to the function-based logic created with earlier versions of ECMAScript 5, etc.</li>
+</ol>
+<div id="output"></div>
+<script type="text/javascript">
+    class MyPerson {
+
+        constructor(name)
+        {
+            this.name = name;
+        }
+
+        whatIsMyName()
+        {
+            document.getElementById('output').innerHTML = this.name;
+        }
+
+    }
+
+    var MyNewPerson = new MyPerson("AngelinaJolie");
+    MyNewPerson.whatIsMyName();
+
+
+
+</script>
+
+</body>
+</html>

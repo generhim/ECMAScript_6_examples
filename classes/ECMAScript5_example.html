@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ECMAScript 5 Example</title>
+</head>
+<body>
+<h1>ECMAScript 5 Example: Using a "class-like" structure to mimic traditional classes.</h1>
+<ol>
+    <li>ECMAScript 1 - 5 does not have classes.</li>
+    <li>ECMAScript 1 - 5: Instead of using classes, people relied on creating a function object -- the "constructor" function -- and then assigning properties to this object and adding functionality to the that object's prototype for later use.</li>
+    <li>Terminology like "class" where not used. Rather the object was created and then its properties and its prototype were extended to provide the desired results.</li>
+    <li>CAVEAT: While the term, "class" was not used, we would still create a new instance of this "class-like" function by using the "var NameOfInstance = new NameOfClass()" format.</li>
+</ol>
+<div id="output"></div>
+<script type="text/javascript">
+    function MyClassLikePersonFunction(personsName)
+    {
+        // since a function is an object in JavaScript
+        // we can still assign properties to the object.
+        this.name = personsName;
+    }
+
+    MyClassLikePersonFunction.prototype.whatsYourName = function()
+    {
+        document.getElementById('output').innerHTML = this.name;
+    }
+
+    var MyNewPerson = new MyClassLikePersonFunction('BillyBobThorton');
+    MyNewPerson.whatsYourName();
+
+</script>
+
+</body>
+</html>
